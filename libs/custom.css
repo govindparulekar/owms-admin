@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+.icon-tab-padding{
+    padding: 13px 12px 0 12px; 
+      
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* **************************Header CSS******************************** */
+.header{
+    height: 60px;
+    background-color: #86c232;
+
+    
+}
+.header-branding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #3f4f2c;
+}
+.header-branding .logo{
+    font-size: 25px;
+}
+.header-branding .brand-name{
+    font-size: 30px;
+}
+.header .signout-notification-wrapper{
+    display: flex;
+    height: 60px;
+    float: right;
+}
+.header .signout-notification-wrapper .signout-btn,.header .signout-notification-wrapper .notification{
+    color:#3f4f2c ;
+}
+.header .signout-notification-wrapper #logout:hover,.header .signout-notification-wrapper #notification:hover{
+    background-color: #3f4f2c;
+    cursor: pointer;
+    color: #86c232;
+    
+
+}
+
+
+/* *************************Side navigation********************************** */
+
+.side-nav{
+    height: calc(100vh - 60px);
+    padding: 0 !important;
+    background-color: #474b4f;
+    border-top-right-radius: 10px;
+}
+.scrollbox-sidenav  {                         
+    height: calc(100vh - 60px);
+    overflow: auto;                 
+    padding-top: 20px;
+    visibility: hidden;
+}
+.scroll-content,.scrollbox-sidenav:hover,.scrollbox-sidenav:focus,.scrollbox-complaints:hover,.scrollbox-complaints:focus{
+    visibility: visible;
+}
+.scrollbox-sidenav::-webkit-scrollbar{
+    width: 2px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+.scrollbox-sidenav::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 179, 179);
+}
+.side-nav>.scrollbox-sidenav>.scroll-content>.admin-info-container{
+    border-bottom: 8px solid #6b6e70;
+}
+
+
+.side-nav>.scrollbox-sidenav>.scroll-content>.admin-info-container>.wrapper1>.admin-img{
+    padding-bottom: 5px;
+    
+    
+}
+    
+
+.side-nav>.scrollbox-sidenav>.scroll-content>.admin-info-container{
+    color: #bfbebe;
+}
+.side-nav>.scrollbox-sidenav>.scroll-content>.admin-info-container{
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.side-nav .nav-list a{
+    text-decoration: none;
+    display: flex;
+    padding: 10px 0 10px 30px;
+    font-size: 16px;
+    color:rgb(218, 215, 215);
+    border-bottom: 1px solid #756F7D !important;
+    position: relative;
+    
+    
+}
+.side-nav .nav-list a:hover{
+    background-color: #6b6e70;
+
+}
+.side-nav .nav-list a .link{
+    margin-left: 15px;
+}
+
+.side-nav .nav-list a .active-link-arraow{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.side-nav .nav-list a .fas{
+    margin-top: 4px;
+}
+
+/* ***********************Complaints section******************** */
+
+.complaints{
+    padding: 0 !important;
+    background-color: #f7fbef;
+    
+    
+}
+.scrollbox-complaints{
+    height: calc(100vh - 60px);
+    overflow: auto;
+    padding: 0 20px;
+    visibility: hidden;
+}
+.scrollbox-complaints::-webkit-scrollbar{
+    width: 5px;
+    background-color: #f3f3f3;
+}
+.scrollbox-complaints::-webkit-scrollbar-thumb{
+    background-color: #d7dad4;
+    border-radius: 10px;
+    box-shadow: ;
+}
+
+.complaints .container-complaints{
+    max-width: 80%;
+    height: calc(100vh - 60px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+.complaints .card{
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fafdfd;
+    
+}
+.complaints .card .btn{
+    cursor: pointer;
+}
+.complaints .card-body{
+    padding: 5px 0 0 15px !important;
+}
+
+.complaints .card-text{
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+/* ************************ view complaint Modal *************************** */
+
+#modal-close{
+    cursor: pointer;
+}
+#view-complaint-modal{
+    text-align: center;
+}
+#view-complaint-modal .complaint-img img{
+    width: 100%;
+    height: 400px;
+    
+}
+#view-complaint-modal .complaint-info .row{
+    padding:10px 0;
+    text-align: left; 
+    
+}
+#view-complaint-modal .complaint-info table tr{
+    margin-bottom: 50px;
+}
+#view-complaint-modal .complaint-info #disc{
+    word-break:break-all;
+}
+.alert{
+    width: 500px !important;
+}
+.alert-success,.alert-danger{
+    display: none;
+}
+/*----------loading screen-----------------*/
+.circle{
+    width: 20px;
+    height: 20px;
+    border: white 1px solid;
+    border-radius: 100%;
+    
+    margin-right: 10px;
+    animation-name: change;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    
+}
+.loading-screen{
+display: flex;
+width: 100%;
+height: 100vh;
+justify-content: center;
+background-color: #85c52b;
+position: absolute;
+z-index: 1;
+}
+.loading-screen .wrapper{
+display: flex;
+align-items: center;
+}
+
+#c1{
+animation-delay: 0s; 
+}
+
+#c2{
+animation-delay: 0.5s;
+
+}
+#c3{
+animation-delay: 1s;
+}
+@keyframes change{
+    8%{
+        background-color: white;
+    }
+    16%,16.1%,100%{
+        background-color:#86c232;
+    }    
+    
+}
+
+/*-------------Notification-------------*/
+.signout-notification-wrapper #notification{
+    position: relative;
+}
+.signout-notification-wrapper #notification .badge{
+    position: absolute;
+    top: 3px;
+    left: 26px;
+}
+
+signout-notification-wrapper #notification{
+    position: relative;
+}
+.signout-notification-wrapper #notification .badge{
+    position: absolute;
+    top: 3px;
+    left: 26px;
+}
+.notification-panel{
+    width: 300px;
+    height: 350px;
+    background-color: #f7fbef;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: none;
+}
+body{
+    background-color: black;
+}
+.notification-panel .notification-header{
+    background-color: #474b4f;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    font-family: 'Scada', sans-serif;
+    color: #f2f2f2;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.notification-panel .body{
+    height: 300.4px;
+    
+}
+.scrollbox{
+    overflow: auto;
+    height: 300.4px;
+    padding: 15px;
+    visibility: hidden;
+}
+.scroll-content,.scrollbox:hover,.scrollbox:focus{
+    visibility: visible;
+}
+
+
+.scrollbox::-webkit-scrollbar
+{
+    width: 5px;
+    border-radius: 5px;
+}
+
+.scrollbox::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color:#b5b9bd ;
+}
+
+.notification-panel .body .notification-info{
+    font-size: 17px;
+}
+.notification-panel .body .time,.notification-panel .body .date{
+    font-size: 15px;
+}
+

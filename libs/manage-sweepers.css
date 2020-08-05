@@ -1,0 +1,31 @@
+.col-lg-9{
+    padding-left: 0 !important;
+}
+#add-sweeper,#refresh-btn{
+    height: calc(1.5em + .5rem + 2px);
+    cursor: pointer !important;
+}
+.table-wrapper{
+    height: 400px;
+    overflow-y: scroll;
+    padding: 0 10px 0 10px;
+}
+.table-head{
+    position: sticky;
+    top: 0;
+}
+.table-wrapper .btn-td{
+    width: 300px !important;
+    text-align: center !important;
+}
+.table-wrapper .alert-warning{
+    display: none;
+}
+#view-sweeper-modal .modal-body .col-md-3{
+    font-size: larger;
+    color: #474b4f;
+}
+
+#create_update-sweeper-modal .modal-title{
+    font-size: 25px;
+}
